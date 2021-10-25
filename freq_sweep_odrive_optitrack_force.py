@@ -13,13 +13,9 @@ import sys
 import time
 from NatNetClient import NatNetClient
 import nidaqmx
-from nidaqmx.constants import Edge
-from nidaqmx.utils import flatten_channel_string
 from nidaqmx.stream_readers import AnalogMultiChannelReader
 from nidaqmx.stream_writers import AnalogMultiChannelWriter
 from nidaqmx import constants
-from threading import Thread
-import logging
 
 
 daq_read_task = nidaqmx.Task()
